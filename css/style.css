@@ -1,4 +1,3 @@
-/* Reset e Configurações Globais */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +11,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
 header {
     background: linear-gradient(135deg, #2c3e50, #3498db);
     color: white;
@@ -30,14 +28,12 @@ header h1 span {
     color: #f1c40f;
 }
 
-/* Container Principal */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Grid de Jogos */
 .game-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -45,7 +41,6 @@ header h1 span {
     margin-bottom: 40px;
 }
 
-/* Estilização dos Cards */
 .card {
     background: white;
     border-radius: 12px;
@@ -67,7 +62,6 @@ header h1 span {
     background-position: center;
 }
 
-/* Cores temporárias para as imagens (você pode substituir por imagens reais) */
 .genius { background: #e74c3c; }
 .velha { background: #2ecc71; }
 .adivinhacao { background: #9b59b6; }
@@ -90,7 +84,6 @@ header h1 span {
     margin-bottom: 20px;
 }
 
-/* Botão Jogar */
 .btn-play {
     display: inline-block;
     padding: 10px 25px;
@@ -106,7 +99,6 @@ header h1 span {
     background-color: #2980b9;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
