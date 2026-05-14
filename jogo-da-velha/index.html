@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Velha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>❌ Jogo da Velha</h1>
+
+  <!-- SELEÇÃO DE MODO -->
+  <div class="menu" id="menu">
+    <h2>Escolha o modo</h2>
+    <button onclick="startGame('multi')">Multiplayer</button>
+    <button onclick="startGame('solo')">Solo (vs CPU)</button>
+  </div>
+
+  <!-- JOGO -->
+  <div class="game" id="game">
+
+    <p id="status">Clique para começar</p>
+
+    <div class="board" id="board"></div>
+
+    <button onclick="resetGame()">Reiniciar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

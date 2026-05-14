@@ -3,37 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genius | GameZone JS</title>
+    <title>Genius Premium | Console</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="game-container">
-        <header>
-            <a href="../index.html" class="btn-back">&larr; Voltar</a>
-            <h1>Genius</h1>
-            <div class="score-board">
-                <p>Rodada: <span id="score">0</span></p>
-                <p>Recorde: <span id="high-score">0</span></p>
-            </div>
-        </header>
-
-        <div id="message-area" class="message-area">
-            Clique em "Iniciar" para começar!
+    <nav class="navbar">
+        <div class="logo">🧠 Jogo <span>Genius</span></div>
+        <div class="nav-actions">
+            <button id="start-btn" class="btn-primary">▶ Iniciar Jogo</button>
         </div>
+    </nav>
 
-        <div class="genius-board">
-            <div class="color-btn green" data-color="0"></div>
-            <div class="color-btn red" data-color="1"></div>
-            <div class="color-btn yellow" data-color="2"></div>
-            <div class="color-btn blue" data-color="3"></div>
-            
-            <div class="center-circle">
-                <button id="btn-start" class="btn-start">INICIAR</button>
+    <div class="main-container">
+        <section class="game-section">
+            <div class="genius-board">
+                <div class="pad green" data-color="0"></div>
+                <div class="pad red" data-color="1"></div>
+                <div class="pad yellow" data-color="2"></div>
+                <div class="pad blue" data-color="3"></div>
+                <div class="center-circle">
+                    <span class="center-text">GENIUS</span>
+                </div>
             </div>
-        </div>
+            <div id="game-status" class="status-box">Pronto para começar?</div>
+        </section>
+
+        <aside class="sidebar">
+            <div class="card card-placar">
+                <h3>🏆 PLACAR</h3>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span>RODADA</span>
+                        <div id="round" class="value blue-text">00</div>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="stat-item">
+                        <span>PONTOS</span>
+                        <div id="points" class="value purple-text">000</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-ranking">
+                <h3>🥇 TOP 5 RANKING</h3>
+                <ul id="ranking-list" class="ranking-list">
+                    </ul>
+            </div>
+
+            <div class="card card-config">
+                <h3>⚙️ CONFIGURAÇÕES</h3>
+                <select id="difficulty" class="diff-select">
+                    <option value="normal">Dificuldade: Normal (Com Som)</option>
+                    <option value="dificil">Dificuldade: Difícil (Mudo)</option>
+                </select>
+                <button id="global-reset-btn" class="btn-restart">🔄 Reiniciar Partida</button>
+            </div>
+        </aside>
     </div>
 
+    <div id="game-over-screen" class="overlay">
+        <div class="modal">
+            <h2>Você errou!</h2>
+            <p>Sua pontuação final:</p>
+            <div id="final-score" class="value purple-text">000</div>
+            
+            <div class="input-group">
+                <label for="player-name">Salve seu nome no ranking:</label>
+                <input type="text" id="player-name" placeholder="Ex: ProPlayer" maxlength="12">
+                <button id="save-score-btn" class="btn-primary">💾 Salvar Recorde</button>
+            </div>
+            
+            <div class="modal-footer">
+                <button id="restart-btn-modal" class="btn-primary">🔄 Tentar Novamente</button>
+                <button id="exit-btn-modal" class="btn-outline">🚪 Sair</button>
+            </div>
+    <hr>
     <script src="script.js"></script>
+<footer>
+    @2026 jogo Genius. desenvolvido para Programação Website1
+</footer>
 </body>
 </html>

@@ -1,62 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Jogos JS</title>
-    <link rel="stylesheet" href="css/style.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Plataforma de Jogos</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
-    <header>
-        <h1>GameZone<span>JS</span></h1>
-        <p>Explore nossa coleção de jogos interativos desenvolvidos com JavaScript puro.</p>
-    </header>
+  <header>
 
-    <main class="container">
-        <section class="game-grid" id="game-grid">
-            <div class="card">
-                <div class="card-image genius"></div>
-                <div class="card-content">
-                    <h3>Jogo Genius</h3>
-                    <p>Teste sua memória e velocidade seguindo a sequência de cores e sons.</p>
-                    <a href="genius/index.html" class="btn-play">Jogar Agora</a>
-                </div>
-            </div>
+    <h1>🎮 Plataforma de Jogos JS</h1>
 
-            <div class="card">
-                <div class="card-image velha"></div>
-                <div class="card-content">
-                    <h3>Jogo da Velha</h3>
-                    <p>O clássico desafio de estratégia para dois jogadores. Quem vencerá?</p>
-                    <a href="jogo-da-velha/index.html" class="btn-play">Jogar Agora</a>
-                </div>
-            </div>
+    <p>
+      Projeto desenvolvido com HTML, CSS e JavaScript
+    </p>
 
-            <div class="card">
-                <div class="card-image adivinhacao"></div>
-                <div class="card-content">
-                    <h3>Adivinhação</h3>
-                    <p>Tente adivinhar o número secreto com o menor número de tentativas.</p>
-                    <a href="adivinhacao/index.html" class="btn-play">Jogar Agora</a>
-                </div>
-            </div>
+  </header>
 
-            <div class="card">
-                <div class="card-image jokenpo"></div>
-                <div class="card-content">
-                    <h3>Pedra, Papel e Tesoura</h3>
-                    <p>Desafie o computador no clássico Jokenpô e suba no placar.</p>
-                    <a href="pedra-papel-tesoura/index.html" class="btn-play">Jogar Agora</a>
-                </div>
-            </div>
-        </section>
-    </main>
+  <main class="container">
 
-    <footer>
-        <p>&copy; 2026 - Desenvolvido para a Disciplina de Programação Website I</p>
-    </footer>
+    <!-- CARD GENIUS -->
+    <div class="card">
 
-    <script src="js/script.js"></script>
+      <div class="icone">🧠</div>
+
+      <h2>Genius</h2>
+
+      <p>
+        Teste sua memória repetindo a sequência correta.
+      </p>
+
+      <a href="genius/index.html">
+        Jogar
+      </a>
+
+    </div>
+
+    <!-- CARD JOGO DA VELHA -->
+    <div class="card">
+
+      <div class="icone">❌</div>
+
+      <h2>Jogo da Velha</h2>
+
+      <p>
+        Clássico jogo da velha em JavaScript.
+      </p>
+
+      <a href="jogo-da-velha/index.html">
+        Jogar
+      </a>
+
+    </div>
+
+    <!-- CARD ADIVINHAÇÃO -->
+    <div class="card">
+
+      <div class="icone">🔢</div>
+
+      <h2>Adivinhação</h2>
+
+      <p>
+        Descubra o número secreto.
+      </p>
+
+      <a href="adivinhacao/index.html">
+        Jogar
+      </a>
+
+    </div>
+
+    <!-- CARD PEDRA PAPEL TESOURA -->
+    <div class="card">
+
+      <div class="icone">✊</div>
+
+      <h2>Pedra Papel Tesoura</h2>
+
+      <p>
+        Desafie o computador.
+      </p>
+
+      <a href="pedra-papel-tesoura/index.html">
+        Jogar
+      </a>
+
+    </div>
+
+  </main>
+
+  <script src="js/script.js"></script>
+  <hr>
+<footer>
+@ 2026 plataforma de jogos. desenvolvido para Programação Website |.
+</footer>
 </body>
 </html>
