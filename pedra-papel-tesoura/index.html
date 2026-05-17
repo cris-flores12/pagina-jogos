@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <a href="../index.html" class="back-link">← Voltar ao Menu</a>
+        <h2>✊✋✌️ Jokenpô</h2>
+
+        <div class="mode-selection">
+            <button id="btn-solo" class="mode-btn active">Solo (vs CPU)</button>
+            <button id="btn-multi" class="mode-btn">2 Jogadores</button>
+        </div>
+
+        <div class="name-registration">
+            <input type="text" id="player-name" placeholder="Nome do Vencedor" maxlength="12">
+        </div>
+
+        <div class="scoreboard">
+            <div class="score-player">J1: <span id="score-p1">0</span></div>
+            <div class="score-player">J2 / CPU: <span id="score-p2">0</span></div>
+        </div>
+
+        <div class="choices-container">
+            <button class="choice-btn" data-choice="pedra">✊</button>
+            <button class="choice-btn" data-choice="papel">✋</button>
+            <button class="choice-btn" data-choice="tesoura">✌️</button>
+        </div>
+
+        <div class="arena">
+            <div class="visual-box" id="visual-p1">?</div>
+            <div class="vs">VS</div>
+            <div class="visual-box" id="visual-p2">?</div>
+        </div>
+
+        <div id="result-msg" class="message">Faça sua escolha (MD5)</div>
+
+        <div class="ranking-section">
+            <h3>🏆 Histórico de Campeões</h3>
+            <div id="jokenpo-ranking-container"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

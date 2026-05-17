@@ -1,86 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genius Premium | Console</title>
+    <title>Genius - GameSphere</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">🧠 Jogo <span>Genius</span></div>
-        <div class="nav-actions">
-            <button id="start-btn" class="btn-primary">▶ Iniciar Jogo</button>
+    <div class="game-container">
+        <a href="../index.html" class="back-link">← Voltar ao Menu</a>
+        <h2>🧠 Jogo Genius</h2>
+        
+        <div class="mode-selection">
+            <button id="btn-solo" class="mode-btn active">Solo</button>
+            <button id="btn-multi" class="mode-btn">Multiplayer</button>
         </div>
-    </nav>
 
-    <div class="main-container">
-        <section class="game-section">
-            <div class="genius-board">
-                <div class="pad green" data-color="0"></div>
-                <div class="pad red" data-color="1"></div>
-                <div class="pad yellow" data-color="2"></div>
-                <div class="pad blue" data-color="3"></div>
-                <div class="center-circle">
-                    <span class="center-text">GENIUS</span>
-                </div>
-            </div>
-            <div id="game-status" class="status-box">Pronto para começar?</div>
-        </section>
+        <div class="name-registration">
+            <input type="text" id="player-name" placeholder="Nome para o Ranking" maxlength="12">
+        </div>
 
-        <aside class="sidebar">
-            <div class="card card-placar">
-                <h3>🏆 PLACAR</h3>
-                <div class="stats">
-                    <div class="stat-item">
-                        <span>RODADA</span>
-                        <div id="round" class="value blue-text">00</div>
-                    </div>
-                    <div class="separator"></div>
-                    <div class="stat-item">
-                        <span>PONTOS</span>
-                        <div id="points" class="value purple-text">000</div>
-                    </div>
-                </div>
-            </div>
+        <div class="scoreboard">
+            <div class="score-box">Rodada: <span id="current-round">0</span></div>
+            <div class="score-box">Melhor: <span id="high-score">0</span></div>
+        </div>
 
-            <div class="card card-ranking">
-                <h3>🥇 TOP 5 RANKING</h3>
-                <ul id="ranking-list" class="ranking-list">
-                    </ul>
-            </div>
+        <div class="genius-board">
+            <div class="genius-btn green" data-color="green"></div>
+            <div class="genius-btn red" data-color="red"></div>
+            <div class="genius-btn yellow" data-color="yellow"></div>
+            <div class="genius-btn blue" data-color="blue"></div>
+            <div class="center-circle"><button id="start-btn">Jogar</button></div>
+        </div>
 
-            <div class="card card-config">
-                <h3>⚙️ CONFIGURAÇÕES</h3>
-                <select id="difficulty" class="diff-select">
-                    <option value="normal">Dificuldade: Normal (Com Som)</option>
-                    <option value="dificil">Dificuldade: Difícil (Mudo)</option>
-                </select>
-                <button id="global-reset-btn" class="btn-restart">🔄 Reiniciar Partida</button>
-            </div>
-        </aside>
+        <div id="msg-display" class="message">Clique em Jogar para iniciar</div>
+        
+        <div class="ranking-section">
+            <h3>🏆 Top 5 Recordes</h3>
+            <div id="genius-ranking-container"></div>
+        </div>
     </div>
-
-    <div id="game-over-screen" class="overlay">
-        <div class="modal">
-            <h2>Você errou!</h2>
-            <p>Sua pontuação final:</p>
-            <div id="final-score" class="value purple-text">000</div>
-            
-            <div class="input-group">
-                <label for="player-name">Salve seu nome no ranking:</label>
-                <input type="text" id="player-name" placeholder="Ex: ProPlayer" maxlength="12">
-                <button id="save-score-btn" class="btn-primary">💾 Salvar Recorde</button>
-            </div>
-            
-            <div class="modal-footer">
-                <button id="restart-btn-modal" class="btn-primary">🔄 Tentar Novamente</button>
-                <button id="exit-btn-modal" class="btn-outline">🚪 Sair</button>
-            </div>
-    <hr>
     <script src="script.js"></script>
-<footer>
-    @2026 jogo Genius. desenvolvido para Programação Website1
-</footer>
 </body>
 </html>

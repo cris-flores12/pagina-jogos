@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <a href="../index.html" class="back-link">← Voltar ao Menu</a>
+        <h2>🔢 Jogo de Adivinhação</h2>
+
+        <div class="mode-selection">
+            <button id="btn-solo" class="mode-btn active">Solo</button>
+            <button id="btn-multi" class="mode-btn">Multiplayer</button>
+        </div>
+
+        <div class="name-registration">
+            <input type="text" id="player-name" placeholder="Nome para o Ranking" maxlength="12">
+        </div>
+
+        <div class="difficulty-section" id="diff-section">
+            <label for="difficulty">Escolha o intervalo: </label>
+            <select id="difficulty">
+                <option value="10">1 a 10</option>
+                <option value="50">1 a 50</option>
+                <option value="100" selected>1 a 100</option>
+            </select>
+        </div>
+
+        <div id="setup-multiplayer" class="hidden">
+            <div class="input-group">
+                <input type="password" id="secret-input" placeholder="Nº Secreto para o J2">
+                <button id="lock-secret-btn">Fixar</button>
+            </div>
+        </div>
+
+        <div class="gameplay-section">
+            <p id="range-label">Clique em Iniciar para começar!</p>
+            <div class="input-group">
+                <input type="number" id="guess-input" placeholder="Seu palpite" disabled>
+                <button id="guess-btn" disabled>Chutar</button>
+            </div>
+        </div>
+
+        <div id="feedback" class="message">Aguardando...</div>
+        <div class="attempts">Tentativas: <span id="attempt-count">0</span></div>
+        <button id="reset-btn">Iniciar / Resetar</button>
+
+        <div class="ranking-section">
+            <h3>🏆 Recordes (Menos Tentativas)</h3>
+            <div id="record-solo-container"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

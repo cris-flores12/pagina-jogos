@@ -11,7 +11,6 @@ body{
   min-height:100vh;
 }
 
-/* HEADER */
 header{
   text-align:center;
   padding:60px 20px;
@@ -29,7 +28,6 @@ header p{
   font-size:1.1rem;
 }
 
-/* CONTAINER */
 .container{
   width:90%;
   max-width:1200px;
@@ -41,7 +39,6 @@ header p{
   padding-bottom:60px;
 }
 
-/* CARD */
 .card{
   background: linear-gradient(145deg, #111827, #0b1220);
   padding:30px;
@@ -61,26 +58,22 @@ header p{
   border-color: #00f5ff;
 }
 
-/* ÍCONE */
 .icone{
   font-size:4rem;
   margin-bottom:20px;
   text-shadow: 0 0 10px rgba(0,245,255,0.6);
 }
 
-/* TÍTULO */
 .card h2{
   margin-bottom:15px;
   color:#00f5ff;
 }
 
-/* TEXTO */
 .card p{
   color:#cbd5e1;
   margin-bottom:20px;
 }
 
-/* BOTÃO */
 .card a{
   display:inline-block;
   padding:12px 25px;
@@ -101,7 +94,6 @@ header p{
   box-shadow: 0 0 20px rgba(0,245,255,0.6);
 }
 
-/* RESPONSIVO */
 @media (max-width: 500px){
   header h1{
     font-size:2.2rem;

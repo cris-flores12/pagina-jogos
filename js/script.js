@@ -1,3 +1,1 @@
-// JavaScript da página principal
-
-console.log("Página carregada com sucesso!");
+consol.log("Página carregada com sucesso!");
